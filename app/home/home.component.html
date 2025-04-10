@@ -1,0 +1,8 @@
+<div *ngIf="showBanner" style="background-color: #ff9800; color: white; text-align: center; padding: 20px; margin-bottom: 20px;">
+    <h2>Promoção de camisetas!</h2>
+    <p>Aproveite desconto de 50%</p>
+  </div>
+
+  <button (click)="showBanner = !showBanner" (click)="save()">
+    {{ showBanner ? 'Ocultar Banner' : 'Mostrar Banner' }}
+  </button>
